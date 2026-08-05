@@ -12,7 +12,7 @@ Grounding (or earthing) is the process of creating a low-resistance physical con
 
 ## Signal Reference Grid (SRG)
 
-<img src="/image/SRG.jpeg" alt="SRG">
+<img src="../image/SRG.jpeg" alt="SRG">
 
 It is a specialized grounding network specifically designed to support high-frequency digital equipment
 

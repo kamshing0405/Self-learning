@@ -6,11 +6,11 @@
 
 ## Depth of security
 
-<img src="/image/depthofsecurity.png" alt="datacenterimage">
+<img src="../image/depthofsecurity.png" alt="datacenterimage">
 
 <br>
 
-<img src="/image/datacenterprotection.png" alt="datacenterimage">
+<img src="../image/datacenterprotection.png" alt="datacenterimage">
 
 1.  Increasing security level when entering the data center
 
@@ -88,7 +88,7 @@ Nice to have
 
 3. Data Centre Infrastructure Management (DCIM)
 
-<img src='/Image/DCIM.jpg'>
+<img src='../image/DCIM.jpg'>
 
 Integrates information technology and facility management disciplines to centralize monitoring, management and intelligent capacity planning of a data centre's critical systems
 

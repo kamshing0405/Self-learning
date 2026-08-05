@@ -2,7 +2,7 @@
 
 ## Open Ceiling
 
-<img src="/image/Structuredeck.jpg" alt="Structure Deck">
+<img src="../image/Structuredeck.jpg" alt="Structure Deck">
 
 ### Structural Ceiling Grid
 
@@ -20,11 +20,11 @@
 
 ## Top Containment Ceiling
 
-<img src="/image/TopContainmentCeiling.webp" alt="Top Containment Ceiling">
+<img src="../image/TopContainmentCeiling.webp" alt="Top Containment Ceiling">
 
 - In high-end data centers, these are almost always made of tempered glass or transparent polycarbonate framed in aluminum.
 
-<img src="/image/airflow.jpg" alt="Airflow">
+<img src="../image/airflow.jpg" alt="Airflow">
 
 1. Energy Efficiency
 
