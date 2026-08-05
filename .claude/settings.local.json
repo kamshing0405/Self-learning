@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:comptiacdn.azureedge.net)"
+      "WebFetch(domain:comptiacdn.azureedge.net)",
+      "Bash(xargs sed:*)"
     ]
   }
 }

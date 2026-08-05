@@ -35,7 +35,7 @@ Without separation, cold and hot air mix — creating hot spots where servers ov
 
 <br>
 
-<img src="../image/coldaisle.png" alt="Cold Aisle Containment" width="400"/>
+<img src="/image/coldaisle.png" alt="Cold Aisle Containment" width="400"/>
 
 <br>
 
@@ -54,7 +54,7 @@ Without separation, cold and hot air mix — creating hot spots where servers ov
 
 <br>
 
-<img src="../image/hotaisle.png" alt="Hot Aisle Containment" width="400"/>
+<img src="/image/hotaisle.png" alt="Hot Aisle Containment" width="400"/>
 
 <br>
 
@@ -80,7 +80,7 @@ Concerning point in building design
 
 ## CRAC(Computer Room Air Conditioner)
 
-<img src='../image/crac.webp'>
+<img src='/image/crac.webp'>
 
 - Mechanism (`DX System`)
 - Self-contained refrigerant cycle. Works independently — no external chiller needed
@@ -88,7 +88,7 @@ Concerning point in building design
 
 ## CRAH (Computer Room Air Handler)
 
-<img src='../image/crah.webp' class=''>
+<img src='/image/crah.webp' class=''>
 
 - Mechanism (Chilled Water): Unlike a CRAC, a CRAH does not have a compressor inside. It functions as a heat exchanger using chilled water supplied by an external Chiller plant.
 

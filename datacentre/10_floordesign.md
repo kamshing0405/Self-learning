@@ -52,7 +52,7 @@ TIA-942 - concentrated load 8.9 kN (~900 kg) / High-density DCs may require 12 k
 
 ### Open Ceiling
 
-<img src="../image/Structuredeck.jpg" alt="Structure Deck">
+<img src="/image/Structuredeck.jpg" alt="Structure Deck">
 
 1. Structural Ceiling Grid
 
@@ -74,6 +74,6 @@ TIA-942 - concentrated load 8.9 kN (~900 kg) / High-density DCs may require 12 k
 
 - By separating air streams,, this method and this method allow for higher supply air temperatures and reduced chiller load, leading to substantial energy savings.
 
-<img src="../image/TopContainmentCeiling.webp" alt="Top Containment Ceiling">
+<img src="/image/TopContainmentCeiling.webp" alt="Top Containment Ceiling">
 
-<img src="../image/airflow.jpg" alt="Airflow">
+<img src="/image/airflow.jpg" alt="Airflow">

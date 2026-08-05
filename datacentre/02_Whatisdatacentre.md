@@ -62,7 +62,7 @@ Main `causes` of downtime in Unplanned downtime
 
 ### ANSI/TIA-942
 
-<img src='../image/datacentertiers.webp'>
+<img src='/image/datacentertiers.webp'>
 
 Coverage:
 
