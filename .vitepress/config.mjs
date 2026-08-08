@@ -15,7 +15,7 @@ export default defineConfig({
       {
         text: "Network",
         items: [
-          { text: "Network+", link: "/networkplus/01_Overview" },
+          { text: "Network+", link: "/networkplus/00_Overview" },
           { text: "CS 168", link: "/cs168/01_Overview" },
         ],
       },
@@ -24,35 +24,42 @@ export default defineConfig({
       "/cs168/": [
         {
           text: "CS 168",
-          items: [{ text: "Overview", link: "/cs168/01_Overview" }],
+          items: [
+            { text: "Overview", link: "/cs168/01_Overview" },
+            { text: "Introduction", link: "/cs168/02_Introduction" },
+            { text: "Routing", link: "/cs168/03_Routing" },
+            { text: "Transport", link: "/cs168/04_Transport" },
+            { text: "Applications", link: "/cs168/05_Applications" },
+            { text: "End-to-End", link: "/cs168/06_EndToEnd" },
+          ],
         },
       ],
       "/networkplus/": [
         {
           text: "Network+",
           items: [
-            { text: "Overview", link: "/networkplus/01_Overview" },
+            { text: "Overview", link: "/networkplus/00_Overview" },
             {
               text: "Networking Concepts",
-              link: "/networkplus/02_NetworkingConcepts",
+              link: "/networkplus/01_NetworkingConcepts",
             },
             {
               text: "Network Implementation",
-              link: "/networkplus/03_NetworkImplementation",
+              link: "/networkplus/02_NetworkImplementation",
             },
             {
               text: "Network Operations",
-              link: "/networkplus/04_NetworkOperations",
+              link: "/networkplus/03_NetworkOperations",
             },
             {
               text: "Network Security",
-              link: "/networkplus/05_NetworkSecurity",
+              link: "/networkplus/04_NetworkSecurity",
             },
             {
               text: "Network Troubleshooting",
-              link: "/networkplus/06_NetworkTroubleshooting",
+              link: "/networkplus/05_NetworkTroubleshooting",
             },
-            { text: "Acronym List", link: "/networkplus/07_AcronymList" },
+            { text: "Acronym List", link: "/networkplus/06_AcronymList" },
           ],
         },
       ],

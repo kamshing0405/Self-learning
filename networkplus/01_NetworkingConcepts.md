@@ -1,18 +1,18 @@
-# 1.0 Networking Concepts (23%)
+# 1.0 Networking Concepts
 
 ## 1.1 OSI model
 
-| Layer        | Number | Description                                            |
-| ------------ | ------ | ------------------------------------------------------ |
-| Physical     | 1      | Transmission of raw bits over a medium                 |
-| Data link    | 2      | Node-to-node data transfer, MAC addressing             |
-| Network      | 3      | Logical addressing, routing (IP)                       |
-| Transport    | 4      | End-to-end communication, TCP/UDP<br>Data segmentation |
-| Session      | 5      | Manages sessions between applications                  |
-| Presentation | 6      | Data format, encryption, compression                   |
-| Application  | 7      | User-facing network services                           |
+| Layer        | Number | Description                                                                                          |
+| ------------ | ------ | ---------------------------------------------------------------------------------------------------- |
+| Physical     | 1      | Transmission of raw bits over a medium<br>Signaling, caling, connectors                              |
+| Data link    | 2      | Node-to-node data transfer, LLC, MAC(Media Access Control) addressing<br>Data Link Control protocols |
+| Network      | 3      | Logical addressing, routing (IP)                                                                     |
+| Transport    | 4      | End-to-end communication, TCP/UDP<br>Data segmentation<br> 'post office' layer / letters, parcels    |
+| Session      | 5      | Manages sessions between applications, communication management                                      |
+| Presentation | 6      | Data format, encryption, compression                                                                 |
+| Application  | 7      | User-facing network services, HTTP / POP3 / DNS                                                      |
 
-> Mnemonic (bottom to top): **P**lease **D**o **N**ot **T**hrow **S**ausage **P**izza **A**way
+> Mnemonic (bottom to top): All **P**eople **S**eem **T**o **N**eed **D**ata **P**rocessing
 
 ---
 
@@ -20,25 +20,25 @@
 
 ### Physical and Virtual Appliances
 
-| Device        | Layer | Function                                                                                    |
-| ------------- | ----- | ------------------------------------------------------------------------------------------- |
-| Hub           | 1     | Broadcasts all traffic to every port — no intelligence, causes collisions, largely obsolete |
-| Switch        | 2     | Forwards frames to specific port based on MAC address — no collisions<br>CAM table          |
-| Router        | 3     | Routes traffic between networks using IP address                                            |
-| Firewall      | 3–7   | Filters traffic by rules                                                                    |
-| IDS/IPS       | 3–7   | Intrusion detection / intrusion prevention system                                           |
-| Load balancer | 4–7   | Distributes traffic across multiple servers                                                 |
-| Proxy         | 7     | Intermediary for client requests<br>Can filtering website                                   |
-| NAS           | —     | Network-attached storage                                                                    |
-| SAN           | —     | Storage area `network`                                                                      |
-| Wireless AP   | 2     | Wireless access point                                                                       |
-| Controller    | —     | Manages multiple APs centrally                                                              |
+| Device                  | Layer | Function                                                                                               |
+| ----------------------- | ----- | ------------------------------------------------------------------------------------------------------ |
+| Hub                     | 1     | Broadcasts all traffic to every port — no intelligence, causes collisions, largely obsolete            |
+| Switch                  | 2     | Forwards frames to specific port based on MAC address — no collisions<br>CAM table / MAC address table |
+| Router                  | 3     | Routes traffic between networks using IP address                                                       |
+| Firewall                | 3–7   | Filters traffic by rules / Next generation firewall                                                    |
+| IDS/IPS                 | 3–7   | Intrusion detection / intrusion prevention system                                                      |
+| Load balancer           | 4–7   | Distributes traffic across multiple servers                                                            |
+| Proxy                   | 7     | Intermediary for client requests<br>Can filtering website                                              |
+| NAS                     | —     | Network-attached storage / file-level access                                                           |
+| SAN                     | —     | Storage area `network` / block-level network                                                           |
+| Wireless AP             | 2     | Wireless access point                                                                                  |
+| Wireless LAN Controller | —     | Manages multiple APs centrally                                                                         |
 
 ### Applications
 
-| Application                       | Description                                                          |
-| --------------------------------- | -------------------------------------------------------------------- |
-| CDN<br>(Content delivery network) | Group of distributed proxy servers<br>Caches content closer to users |
+| Application                       | Description                                                            |
+| --------------------------------- | ---------------------------------------------------------------------- |
+| CDN<br>(Content delivery network) | Group of distributed proxy servers<br>`Caches content` closer to users |
 
 ### Functions
 
@@ -54,14 +54,14 @@
 
 ### Cloud Networking and Gateways
 
-| Concept                                       | Description                                                                                                        |
-| --------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| VPC                                           | Virtual private cloud — isolated cloud network                                                                     |
-| NFV                                           | Network functions virtualization — run network functions as software                                               |
-| Network security groups                       | Cloud firewall rules applied to resources                                                                          |
-| Network security lists                        | Subnet-level firewall rules                                                                                        |
-| Internet gateway                              | Connects VPC to the internet                                                                                       |
-| NAT gateway <br>(Network Address Translation) | Allows private resources to reach internet `without being exposed`<br>Hiding the internal IP address from external |
+| Concept                                       | Description                                                                                                            |
+| --------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| VPC                                           | Virtual private cloud — isolated cloud network                                                                         |
+| NFV                                           | Network functions virtualization — run network functions as software<br>Run on the `hypervisor` or as virtual machines |
+| Network security groups                       | Cloud firewall rules applied to resources                                                                              |
+| Network security lists                        | Subnet-level firewall rules                                                                                            |
+| Internet gateway                              | Connects VPC to the internet                                                                                           |
+| NAT gateway <br>(Network Address Translation) | Allows private resources to reach internet `without being exposed`<br>Hiding the internal IP address from external     |
 
 ### Cloud Connectivity Options
 
@@ -103,11 +103,12 @@
 | FTP                                                | 20/21                                                                    | No secure                                                                                               |
 | SFTP                                               | 22                                                                       |
 | TFTP                                               | 69                                                                       |
-| SSH                                                | 22                                                                       |
+| SSH                                                | 22                                                                       | Remote                                                                                                  |
 | Telnet                                             | 23                                                                       | No secure                                                                                               |
 | SMTP<br>Simple Mail Transfer Protocol              | 25                                                                       |
+| SMTPS                                              | 587                                                                      |
 | POP3 (Post Office Protocol Version 3)              | 110                                                                      |                                                                                                         |
-| DNS                                                | 53                                                                       |
+| DNS                                                | 53                                                                       | DNS cache - temporary local database stored by an OS / Web to speed up website loading times            |
 | DHCP                                               | 67/68                                                                    | Relay agents - forward DHCP requests and responses between clients and servers across different subnets |
 | HTTP                                               | 80                                                                       |
 | HTTPS                                              | 443                                                                      |
@@ -117,7 +118,6 @@
 | LDAPS                                              | 636                                                                      |
 | SMB（Server Message Block）                        | 445                                                                      |
 | Syslog                                             | 514                                                                      |
-| SMTPS                                              | 587                                                                      |
 | SQL Server                                         | 1433                                                                     |
 | RDP                                                | 3389                                                                     |
 | SIP                                                | 5060/5061                                                                |
@@ -127,7 +127,7 @@
 
 | Protocol | Description                                                                                     |
 | -------- | ----------------------------------------------------------------------------------------------- |
-| ICMP     | Internet Control Message Protocol — ping, error messages                                        |
+| ICMP     | Internet Control Message Protocol — ping(connectivity), error messages                          |
 | TCP      | Transmission Control Protocol — reliable, connection-oriented                                   |
 | UDP      | User Datagram Protocol — fast, connectionless                                                   |
 | GRE      | Generic Routing Encapsulation — tunnel protocol                                                 |
@@ -202,7 +202,7 @@
 | RJ11      | Phone lines                             |
 | RJ45      | Ethernet                                |
 | F-type    | Coaxial / cable TV                      |
-| BNC       | Bayonet Neill-Concelman — coaxial       |
+| BNC       | Bayonet Neill-Concelman — `coaxial`     |
 
 ---
 
@@ -215,16 +215,17 @@
 | Mesh                 | Every device connects to multiple others — high redundancy    |
 | Hybrid               | Combination of topologies                                     |
 | Star / Hub and spoke | All devices connect to a central node                         |
+| bus                  | Connects directly to one single central cable                 |
 | Spine and leaf       | Data center architecture — every leaf connects to every spine |
 | Point to point       | Direct link between two devices                               |
 
 ### Three-Tier Hierarchical Model
 
-| Tier         | Function                                          |
-| ------------ | ------------------------------------------------- |
-| Core         | High-speed backbone, connects distribution layers |
-| Distribution | Routing, policy, aggregates access layer          |
-| Access       | End devices connect here (PCs, phones)            |
+| Tier         | Function                                                                   |
+| ------------ | -------------------------------------------------------------------------- |
+| Core         | High-speed backbone, connects distribution layers                          |
+| Distribution | Routing, policy, aggregates access layer, routing between network segments |
+| Access       | End devices connect here (PCs, phones)                                     |
 
 - **Collapsed core** — core and distribution combined into one layer
 
@@ -365,9 +366,9 @@ Subnets start at multiples of the magic number: 0, 64, 128, 192 (for /26)
 
 ### IPv6 Addressing
 
-| Feature                       | Description                                   |
-| ----------------------------- | --------------------------------------------- |
-| Mitigating address exhaustion | 128-bit addresses — 340 undecillion addresses |
-| Tunneling                     | IPv6 over IPv4 networks                       |
-| Dual stack                    | Device runs both IPv4 and IPv6                |
-| NAT64                         | Translates between IPv6 and IPv4              |
+| Feature                       | Description                                     |
+| ----------------------------- | ----------------------------------------------- |
+| Mitigating address exhaustion | `128-bit` addresses — 340 undecillion addresses |
+| Tunneling                     | IPv6 over IPv4 networks                         |
+| Dual stack                    | Device runs both IPv4 and IPv6                  |
+| NAT64                         | Translates between IPv6 and IPv4                |
